@@ -46,3 +46,13 @@ traitlets==5.16.1
 typing_extensions==4.16.0
 tzdata==2026.5
 wcwidth==0.9.4
+
+## Environment Setup
+cd path/to/your/folder (Example: cd C:\Users\kawsa\week5-lab05)
+
+conda env create -f environment.yml 
+conda activate lab05-late-deliveries 
+pip install scikit-learn pandas matplotlib pytest ruff ipykernel 
+pip freeze > requirements.txt 
+pip install -e .
+
