@@ -1,0 +1,78 @@
+[
+  {
+    "threshold": 0.05,
+    "cost": 7366
+  },
+  {
+    "threshold": 0.1,
+    "cost": 5458
+  },
+  {
+    "threshold": 0.15,
+    "cost": 4706
+  },
+  {
+    "threshold": 0.2,
+    "cost": 4296
+  },
+  {
+    "threshold": 0.25,
+    "cost": 4171
+  },
+  {
+    "threshold": 0.3,
+    "cost": 4254
+  },
+  {
+    "threshold": 0.35,
+    "cost": 4322
+  },
+  {
+    "threshold": 0.4,
+    "cost": 4410
+  },
+  {
+    "threshold": 0.45,
+    "cost": 4507
+  },
+  {
+    "threshold": 0.5,
+    "cost": 4624
+  },
+  {
+    "threshold": 0.55,
+    "cost": 4681
+  },
+  {
+    "threshold": 0.6,
+    "cost": 4743
+  },
+  {
+    "threshold": 0.65,
+    "cost": 4810
+  },
+  {
+    "threshold": 0.7,
+    "cost": 4960
+  },
+  {
+    "threshold": 0.75,
+    "cost": 4970
+  },
+  {
+    "threshold": 0.8,
+    "cost": 5082
+  },
+  {
+    "threshold": 0.85,
+    "cost": 5148
+  },
+  {
+    "threshold": 0.9,
+    "cost": 5214
+  },
+  {
+    "threshold": 0.95,
+    "cost": 5265
+  }
+]
