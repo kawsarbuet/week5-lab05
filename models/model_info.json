@@ -1,5 +1,5 @@
 {
-  "scikit_learn_version": "1.8.0",
+  "scikit_learn_version": "1.9.1",
   "seed": 881,
   "threshold": 0.25,
   "numeric_features": [
