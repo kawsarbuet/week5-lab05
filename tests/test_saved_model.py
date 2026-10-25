@@ -1,7 +1,9 @@
 """Saved model preserves probability predictions."""
+
 import joblib
 import numpy as np
 from sklearn.linear_model import LogisticRegression
+
 from latedeliveries.pipeline import build_pipeline, split_orders
 
 

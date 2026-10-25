@@ -1,6 +1,13 @@
 """Business costs and cost-based decision thresholds."""
+
 import numpy as np
-from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score, roc_auc_score
+from sklearn.metrics import (
+    accuracy_score,
+    f1_score,
+    precision_score,
+    recall_score,
+    roc_auc_score,
+)
 
 THRESHOLDS = np.round(np.arange(0.05, 0.951, 0.05), 2)
 

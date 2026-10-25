@@ -1,5 +1,7 @@
 """Shared sample data."""
+
 import pytest
+
 from latedeliveries.data import make_orders
 
 

@@ -1,11 +1,23 @@
 """Tests for leak prevention and preprocessing."""
+
 import numpy as np
 import pytest
 from sklearn.linear_model import LogisticRegression
+
 from latedeliveries.pipeline import FEATURES, SEED, build_pipeline, split_orders
 
 
-@pytest.mark.parametrize("excluded", ["late", "order_id", "prep_minutes", "customer_rating", "courier_months", "vehicle"])
+@pytest.mark.parametrize(
+    "excluded",
+    [
+        "late",
+        "order_id",
+        "prep_minutes",
+        "customer_rating",
+        "courier_months",
+        "vehicle",
+    ],
+)
 def test_excluded_features(excluded):
     assert excluded not in FEATURES
 
