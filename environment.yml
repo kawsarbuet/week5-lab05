@@ -1,4 +1,4 @@
-name: lab05-late-deliveries
+name: latedeliveries
 channels:
   - conda-forge
 dependencies:
