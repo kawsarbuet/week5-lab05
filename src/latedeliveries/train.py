@@ -1,4 +1,3 @@
-
 """Reproducible training, model selection, one test evaluation, and artifacts."""
 
 import json
@@ -115,7 +114,6 @@ def main():
     rows = []
 
     for name, estimator in candidates.items():
-
         scores = cross_validate(
             build_pipeline(estimator),
             x_train,
@@ -128,12 +126,8 @@ def main():
         row = {"model": name}
 
         for metric in scoring:
-            row[f"{metric}_mean"] = float(
-                scores[f"test_{metric}"].mean()
-            )
-            row[f"{metric}_std"] = float(
-                scores[f"test_{metric}"].std()
-            )
+            row[f"{metric}_mean"] = float(scores[f"test_{metric}"].mean())
+            row[f"{metric}_std"] = float(scores[f"test_{metric}"].std())
 
         rows.append(row)
 
@@ -257,9 +251,7 @@ def main():
         "untuned_cv_roc_auc": untuned_auc,
         "tuned_cv_roc_auc": float(grid.best_score_),
         "cv_roc_auc_spread": float(
-            cv_results.set_index("model").loc[
-                "Logistic", "roc_auc_std"
-            ]
+            cv_results.set_index("model").loc["Logistic", "roc_auc_std"]
         ),
         "best_params": grid.best_params_,
         "threshold": threshold,
