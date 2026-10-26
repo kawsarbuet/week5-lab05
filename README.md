@@ -16,7 +16,7 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
-The lab environment uses Python 3.11 and the `conda-forge` channel. The project uses NumPy, pandas, scikit-learn, matplotlib, joblib, pytest, Ruff, and ipykernel. Use the pinned versions in `requirements.txt` when reproducing results.
+The lab environment uses Python 3.14 and the `conda-forge` channel. The project uses NumPy, pandas, scikit-learn, matplotlib, joblib, pytest, Ruff, and ipykernel. Use the pinned versions in `requirements.txt` when reproducing results.
 
 ## Run
 
