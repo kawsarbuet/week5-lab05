@@ -1,8 +1,6 @@
-# Late Deliveries
-
 **AIGC 5005 — Lab 05: Predict Late Deliveries**  
 **Project:** QuickBite late-order prediction  
-**Repository:** https://github.com/kawsarbuet/week5-lab05
+
 
 QuickBite wants to predict, **when a customer places an order**, whether delivery will be more than ten minutes late. This project uses a reproducible scikit-learn classification pipeline and chooses a decision threshold based on the company's voucher and missed-delay costs rather than accuracy alone.
 
@@ -13,6 +11,7 @@ From the repository root:
 ```bash
 conda env create -f environment.yml
 conda activate lab05-late-deliveries
+pip install scikit-learn pandas matplotlib pytest ruff ipykernel
 pip install -r requirements.txt
 pip install -e .
 ```
@@ -177,11 +176,3 @@ The required test suite is intended to protect these behaviors:
 - **Unverified tuning details:** Exact best parameters and tuned-versus-untuned performance were not present in the notebook outputs reviewed and must be added from training artifacts.
 - **Leakage demonstration not documented:** The lab suggests temporarily adding an excluded feature and comparing ROC-AUC, then removing it. No measured leakage-experiment result was available to report here.
 - **Final checks not independently confirmed:** Formatting, linting, pytest, and fresh-clone reproducibility should all be rerun and recorded before submission.
-
-## Submission reminder
-
-Commit the `models/` and `reports/` directories along with the source code, tests, notebook (with saved outputs), environment files, and README. The lab requires **at least six coherent commits**, including the original provided `data.py` in its own commit. Submit the **repository URL** on Blackboard, not an individual file URL. Verify that the repository is accessible to the instructor.
-
-## Reference
-
-Humber Polytechnic. (2026). *AIGC 5005: Lab 05 — Predict Late Deliveries* [Course lab instructions].
